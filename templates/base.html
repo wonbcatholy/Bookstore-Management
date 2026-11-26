@@ -1,0 +1,20 @@
+{% load static %}
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Bookstore Management System{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Bookstore Management System</h1>
+        <p>Hệ thống quản lý nhà sách</p>
+    </header>
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="site-footer">Dự án học phần Introduction to Software Engineering</footer>
+</body>
+</html>
